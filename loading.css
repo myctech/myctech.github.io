@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(45deg, #A9ABAE, #CAE7DF);
+}
+.container{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper{
+  position: absolute;
+  top: -35px;
+  transform: scale(1.5);
+}
+.loader{
+  height: 25px;
+ width: 1px;
+ position: absolute;
+ animation: rotate 3.5s linear infinite;
+}
+.loader .dot{
+  top: 30px;
+ height: 7px;
+ width: 7px;
+ background: #3778C2;
+ border-radius: 50%;
+ position: relative;
+}
+.text{
+  position: absolute;
+  bottom: -85px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Lexend', sans-serif;
+  color: #3778C2;
+}
+@keyframes rotate {
+  30%{
+    transform: rotate(220deg);
+  }
+  40%{
+  transform: rotate(450deg);
+    opacity: 1;
+ }
+ 75%{
+  transform: rotate(720deg);
+  opacity: 1;
+ }
+ 76%{
+  opacity: 0;
+ }
+ 100%{
+  opacity: 0;
+  transform: rotate(0deg);
+ }
+}
+.loader:nth-child(1){
+  animation-delay: 0.15s;
+}
+.loader:nth-child(2){
+  animation-delay: 0.3s;
+}
+.loader:nth-child(3){
+  animation-delay: 0.45s;
+}
+.loader:nth-child(4){
+  animation-delay: 0.6s;
+}
+.loader:nth-child(5){
+  animation-delay: 0.75s;
+}
+.loader:nth-child(6){
+  animation-delay: 0.9s;
+}
+.butn {
+  position: fixed;
+  left: 5%;
+  bottom: 85%;
+  width: 27%;
+  color: white;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 5px;
+}
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  font-family: 'Lexend', sans-serif;
+}
